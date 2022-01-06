@@ -1,0 +1,1087 @@
+{% load static %}
+{% static "images" as baseUrl%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HEX - Responsive One Page Multipurpose HTML Template</title>
+
+	<!--pageMeta-->
+	
+    
+	<!-- Lib CSS -->
+	<link href="{% static 'lib/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owl-carousel/owl.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/Swiper/css/swiper.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owl-carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/vegas/vegas.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/Magnific-Popup/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/sweetalert/sweetalert2.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/materialize-parallax/materialize-parallax.css' %}" rel="stylesheet">
+
+
+	<!-- Icon fonts -->
+    <link href="{% static 'fonts/fontawesome-all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'fonts/pe-icon-7-stroke.css' %}" rel="stylesheet">
+    <link href="{% static 'fonts/et-line-font.css' %}" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/ckav-grids.css' %}" rel="stylesheet">
+    <link href="{% static 'css/helper.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+    <!-- Theme color css -->
+    <link href="{% static 'css/themes/theme-01.css' %}" rel="stylesheet">
+    <link href="{% static 'css/template-custom.css' %}" rel="stylesheet">
+
+	<!-- Favicons -->
+	<link rel="icon" href="{% static 'images/favicons/favicon.ico' %}">
+	<link rel="apple-touch-icon" href="{% static 'images/favicons/apple-touch-icon.png' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'images/favicons/apple-touch-icon-72x72.png' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'images/favicons/apple-touch-icon-114x114.png' %}">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<!--[if IE 9 ]><script src="js/ie-matchmedia.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-loader"><b class="spinner"></b></div>
+
+<div id="page" data-linkscroll='y'>
+		
+	<!--
+	************************************************************
+	* HEADER
+	************************************************************ -->
+	<header class="main-head dark bg-op-02" data-sticky="y" data-hide="y">
+		<div class="container bdr-b bdr-op-light-1 min-px-h8">
+			<div class="row gt0 align-items-center head-row">
+				
+				<!--=================================
+				= LOGO SECTION
+				==================================-->
+				<div class="col-lg-2 pos-rel">
+					<a class="nav-handle" data-nav=".m-content" data-navopen="pe-7s-more" data-navclose="pe-7s-close"><i class="pe-7s-more"></i></a>
+					<div class="header-logo-wrp">
+						<a class="header-logo pd-tb-small" href="http://ckavart.com/"><img src="{{ company.logo.url }}" alt="Brand logo"></a>
+					</div>
+				</div><!-- ======= END : LOGO SECTION =======  -->
+				
+				<!--=================================
+				= NAVIGATION LINKS
+				==================================-->
+				<div class="col-lg-10 align-r m-content">
+					<ul class="row gt20 justify-content-md-end mr-0 align-items-center">
+						<li class="col-lg-auto">
+							<nav class="menu-wrp align-l">
+								<ul class="menu">
+									<li class="menu-item"><a href="#features">Features</a></li>
+									<li class="menu-item"><a href="#gallery">Gallery</a></li>
+									<li class="menu-item"><a href="#price">Pricing</a></li>
+									<li class="menu-item"><a href="#testimonials">Testimonials</a></li>
+									<li class="menu-item"><a href="#download">Download</a></li>
+								</ul>
+							</nav>
+						</li>
+						
+						<li>
+							<a href="http://ckavart.com/" target="_blank" class="sq30 fs16 rd-0 iconbox btn-white"><i class="fab fa-facebook-f"></i></a>
+							<a href="http://ckavart.com/" target="_blank" class="sq30 fs16 rd-0 iconbox btn-white"><i class="fab fa-twitter"></i></a>
+							<a href="http://ckavart.com/" target="_blank" class="sq30 fs16 rd-0 iconbox btn-white"><i class="fab fa-google"></i></a>
+						</li>
+						<li class="col-lg-auto" data-ckav-sm="pd-0 pd-t-10 align-c">
+							<a href="#popup-content" class="btn btn-white mini"><i class="far fa-envelope mr-r-5"></i> CONTACT US</a>
+						</li>
+					</ul>
+
+				</div><!-- ======= END : NAVIGATION LINKS =======  -->
+
+			</div>
+		</div>
+	</header><!-- ************** END : HEADER **************  -->
+
+	
+	<!--
+	************************************************************
+	* INTRO SECTION 10
+	************************************************************ -->
+	<section class="pd-tb-small vh100 flex-bc pos-rel typo-light" data-ckav-sm="h-reset" style="background-image:url({{banner.background_image.url}}); background-size:cover">
+		<div class="container pos-rel z2 align-c">
+
+			<!--=================================
+			= CONTENT
+			==================================-->
+			<div class="w75 mr-auto mr-b-60" data-ckav-sm="mr-b-20" data-animate-in="fadeIn|0.1">
+				<a class="inline-block max-px-w100 mr-b-30" href="#"><img src="{{ company.logo.url }}" alt="App logo"></a>
+				<h1 class="title large mr-0" data-ckav-sm="medium mr-b-10">{{ banner.title }}</h1>
+				<!-- <h2 class="title small bold-n mr-b-40" data-ckav-sm="small">App and web service templates</h2> -->
+				<p class="title-sub mr-0 small">{{ banner.text }}</p>
+			</div>
+
+			<!--=================================
+			= DOWNLOAD BUTTONS
+			==================================-->
+			<div class="row mr-tb-60 align-c middle-md" data-animate-in="fadeIn|0.2">
+				<div class="col-md-3"><hr class="light"></div>
+				<div class="col-md-6">
+					<a href="http://www.ckavart.com/" class="sq60 fs22 mr-lr-5 btn-white solid bdr-2 inline-flex rd flex-cc"><i class="fab fa-apple"></i></a>
+					<a href="http://www.ckavart.com/" class="sq60 fs22 mr-lr-5 btn-white solid bdr-2 inline-flex rd flex-cc"><i class="fab fa-android"></i></a>
+					<a href="http://www.ckavart.com/" class="sq60 fs22 mr-lr-5 btn-white solid bdr-2 inline-flex rd flex-cc"><i class="fab fa-windows"></i></a>
+				</div>
+				<div class="col-md-3"><hr class="light"></div>
+			</div>
+
+			<ul class="inline-list gt-small size-mini reset op-05" data-animate-in="fadeIn|0.3">
+				
+				{% for brand in brand %}
+					<li><img src="{{ brand.image.url }}" alt="brand"></li>
+				{% endfor %}
+					
+				
+			</ul>
+
+		</div>
+
+		<div class="full-wh">
+			<b class="bg-dark op-02 full-wh z1"></b>
+			<div class="bgslider full-wh bg-cover" data-bgslider="{{ content_21_text.image.url }}"></div>	
+		</div>
+
+	</section>
+	<!-- ************** END : INTRO SECTION 10 **************  -->
+
+	<!--
+	************************************************************
+	* CONTENT SECTION 21
+	************************************************************ -->
+	<section class="pos-rel pd-tb-small" data-ckav-sm="pd-tb-small" id="features">
+		<div class="container">
+			
+			<div class="w75 mr-auto align-c" data-animate-in="fadeInUp">
+				<h2 class="title f-1">{{ content21_text.title }}</h2>
+				<p class="title-sub small f-2">{{ content21_text.text }}</p>
+				<hr class="mr-tb-50">
+			</div>
+
+			<div class="row middle-md mb20">
+				
+				<!--=================================
+				= INFO BOXES
+				==================================-->
+				<div class="col-md-3">
+					
+					{% for box in content21_obj %}						
+					<div class="info-obj img-t g10 mini align-c mr-b-20" data-animate-in="fadeInLeft|0.1">
+						<div class="img txt-default"><span class="iconwrp"><img src="{{ box.image.url }}" alt=" "></span></div>
+						<div class="info">
+							<h3 class="title mini bold-n f-1">{{ box.title }}</h3>
+							<p class="mr-0 f-2">{{ box.text }}</p>
+						</div>
+					</div>
+					<hr class="mr-t-30 mr-b-20">
+					{% endfor %}
+
+
+
+					<!-- <div class="info-obj img-t g10 mini align-c mr-b-20" data-animate-in="fadeInLeft|0.2">
+						<div class="img txt-default"><span class="iconwrp"><i class="pe-7s-light"></i></span></div>
+						<div class="info">
+							<h3 class="title mini bold-n f-1">Easy forms</h3>
+							<p class="mr-0 f-2">Lorem ipsum dolor sit ametconsetetur sadipscing diam nonumy eirmod</p>
+						</div>
+					</div>
+
+					<hr class="mr-t-30 mr-b-20">
+					
+					<div class="info-obj img-t g10 mini align-c mr-b-20" data-animate-in="fadeInLeft|0.3">
+						<div class="img txt-default"><span class="iconwrp"><i class="pe-7s-map-2"></i></span></div>
+						<div class="info">
+							<h3 class="title mini bold-n f-1">Sliders</h3>
+							<p class="mr-0 f-2">Lorem ipsum dolor sit ametconsetetur sadipscing nonumy eirmod</p>
+						</div>
+					</div> -->
+				</div><!-- ======= END :  =======  -->
+				
+				<!--=================================
+				= IMAGE
+				==================================-->
+				<div class="col-md-6 align-c" data-animate-in="fadeIn">
+					<img src="{{ content21_text.image.url }}" class="mr-auto" alt="image">
+				</div><!-- ======= END :  =======  -->
+				
+				<!--=================================
+				= INFO BOXES
+				==================================-->
+				<div class="col-md-3">
+					
+					{% for box in content21_obj2 %}						
+						<div class="info-obj img-t g10 mini align-c mr-b-20" data-animate-in="fadeInRight|0.1">
+							<div class="img txt-default"><span class="iconwrp"><img src="{{ box.image.url }}" alt=" "></span></div>
+							<div class="info">
+								<h3 class="title mini bold-n f-1">{{ box.title }}</h3>
+								<p class="mr-0 f-2">{{ box.text }}</p>
+							</div>
+						</div>
+						<hr class="mr-t-30 mr-b-20">
+					{% endfor %}
+
+
+
+					<!-- <div class="info-obj img-t g10 mini align-c mr-b-20" data-animate-in="fadeInRight|0.2">
+						<div class="img txt-default"><span class="iconwrp"><i class="pe-7s-compass"></i></span></div>
+						<div class="info">
+							<h3 class="title mini bold-n f-1">Background video</h3>
+							<p class="mr-0 f-2">Lorem ipsum dolor sit ametconsetetur sadipscing diam nonumy eirmod</p>
+						</div>
+					</div>
+
+					<hr class="mr-t-30 mr-b-20">
+					
+					<div class="info-obj img-t g10 mini align-c mr-b-20" data-animate-in="fadeInRight|0.3">
+						<div class="img txt-default"><span class="iconwrp"><i class="pe-7s-add-user"></i></span></div>
+						<div class="info">
+							<h3 class="title mini bold-n f-1">Parallax background</h3>
+							<p class="mr-0 f-2">Lorem ipsum dolor sit ametconsetetur sadipscing nonumy eirmod</p>
+						</div>
+					</div> -->
+				</div><!-- ======= END :  =======  -->
+
+			</div>
+
+		</div>
+	</section>
+	<!-- ************** END : CONTENT SECTION 21 **************  -->
+
+	<!--
+	************************************************************
+	* CALL TO ACTION 06
+	************************************************************ -->
+	<section class="pd-tb-small pos-rel" data-ckav-sm="pd-tb-small align-c" style="background-image: url({{call06.background_image.url}});  background-size:cover; background-repeat:no-repeat;">
+		<div class="container typo-light pos-rel z2">
+			<div class="row gt20 mb20 middle-md flex-cc">
+				<div class="col-md-8" data-animate-in="fadeInLeft">
+					<h2 class="title fs70 txt-default f-1" data-ckav-sm="large">{{ call06.number }}</h2>
+					<h3 class="title bold-n mr-0" data-ckav-sm="small">{{ call06.title }}</h3>	
+				</div>
+				
+				<div class="col-md-3 offset-md-1" data-animate-in="fadeInRight">
+					<a href="http://ckavart.com/" class="btn btn-default bdr-3 rd-10 large wrap-normal lh-5" data-ckav-sm="medium bold-n">GET STARTED FOR FREE</a>
+				</div>
+			</div>
+		</div>
+		<b class="full-wh bg-dark op-09 z1"></b>
+
+		<!-- Bacground rasmi chiqmadi -->
+		<div class="full-vh bg-cc bg-cover" data-stellar="y" data-stellar-ratio="0.8" data-ckav-sm="h100"  data-bg="url({{call06.background_image.url}})"></div>
+	</section>
+	<!-- ************** END : CALL TO ACTION 06 **************  -->
+
+	<!--
+	************************************************************
+	* FEATURES SECTION 06
+	************************************************************ -->
+	<section class="pos-rel pd-tb-small" data-ckav-sm="pd-tb-small">
+		<div class="container pos-rel z1">
+			<div class="w75 mr-auto align-c" data-ckav-sm="mr-b-20" data-animate-in="fadeInUp">
+				<h2 class="title f-1" data-ckav-sm="medium">{{ features06_text.title }}</h2>
+				<p class="title-sub f-2" data-ckav-sm="small">{{ features06_text.text }}</p>	
+			</div>
+
+			<img src="{{ features06_text.image.url }}" class="mr-auto mr-tb-50" alt="phone-image" data-animate-in="fadeInUp">
+
+			<div class="row gt50 mb40">
+				{% for box in features06_obj %}						
+				<div class="col-md-4" data-animate-in="fadeInUp|0.1">
+						<div class="info-obj img-l g20 mini" data-ckav-sm="mr-b-0">
+								<div class="img"><span class="iconwrp txt-default"><img src="{{ box.image.url }}" alt=""></span>
+								</div>
+								<div class="info">
+									<h3 class="title mini mr-b-10 bold-n f-1">{{ box.title }}</h3>
+									<p class="f-2">{{ box.text }}</p>
+								</div>
+						</div>
+					</div>
+					{% endfor %}	
+
+				<!-- <div class="col-md-4" data-animate-in="fadeInUp|0.2">
+					<div class="info-obj img-l g20 mini" data-ckav-sm="mr-b-0">
+						<div class="img"><span class="iconwrp txt-default"><i class="pe-7s-refresh-2"></i></span></div>
+						<div class="info">
+							<h3 class="title mini mr-b-10 bold-n f-1">Flexible form script</h3>
+							<p class="f-2">Lorem ipsum dolor sit ametconsetetur sadipscing elitr, sed diam nonumy eirmod</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4" data-animate-in="fadeInUp|0.3">
+					<div class="info-obj img-l g20 mini" data-ckav-sm="mr-b-0">
+						<div class="img"><span class="iconwrp txt-default"><i class="pe-7s-shuffle"></i></span></div>
+						<div class="info">
+							<h3 class="title mini mr-b-10 bold-n f-1">Advanced helper CSS</h3>
+							<p class="f-2">Lorem ipsum dolor sit ametconsetetur sadipscing elitr, sed diam nonumy eirmod</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4" data-animate-in="fadeInUp|0.4">
+					<div class="info-obj img-l g20 mini" data-ckav-sm="mr-b-0">
+						<div class="img"><span class="iconwrp txt-default"><i class="pe-7s-download"></i></span></div>
+						<div class="info">
+							<h3 class="title mini mr-b-10 bold-n f-1">Full screen slideshow</h3>
+							<p class="f-2">Lorem ipsum dolor sit ametconsetetur sadipscing elitr, sed diam nonumy eirmod</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4" data-animate-in="fadeInUp|0.5">
+					<div class="info-obj img-l g20 mini" data-ckav-sm="mr-b-0">
+						<div class="img"><span class="iconwrp txt-default"><i class="pe-7s-paint-bucket"></i></span></div>
+						<div class="info">
+							<h3 class="title mini mr-b-10 bold-n f-1">Easy to customize</h3>
+							<p class="f-2">Lorem ipsum dolor sit ametconsetetur sadipscing elitr, sed diam nonumy eirmod</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4" data-animate-in="fadeInUp|0.6">
+					<div class="info-obj img-l g20 mini" data-ckav-sm="mr-b-0">
+						<div class="img"><span class="iconwrp txt-default"><i class="pe-7s-plugin"></i></span></div>
+						<div class="info">
+							<h3 class="title mini mr-b-10 bold-n f-1">Simple & easy widgets</h3>
+							<p class="f-2">Lorem ipsum dolor sit ametconsetetur sadipscing elitr, sed diam nonumy eirmod</p>
+						</div>
+					</div>
+				</div> -->
+			</div>
+
+		</div><!-- // END : container //  -->
+	</section>
+	<!-- ************** END : FEATURES SECTION 06 **************  -->
+
+	<!--
+	************************************************************
+	* Video introduction 
+	************************************************************ -->
+	<section class="pos-rel pd-tb-small bg-gray2" data-ckav-sm="pd-tb-small">
+		<div class="container pos-rel z1 align-c">
+
+			<div class="w75 mr-auto">
+				<h2 class="title f-1" data-ckav-sm="medium" data-animate-in="fadeInUp">{{ video_title.title }}</h2>
+				<p class="title-sub f-2" data-ckav-sm="small" data-animate-in="fadeInUp">{{ video_title.text }}</p>
+				
+				<!--=================================
+				= OWL CAROUSEL
+				==================================-->
+				<div class="carousel-widget ctrl-1 popgallery-widget" data-animate-in="fadeIn"
+					data-items="1"
+					data-nav="true"
+					data-pager="true"
+					data-itemrange="0,1|420,1|600,1|768,1|992,1|1200,1"
+					data-margin="20"
+					data-autoplay="false"
+					data-hauto="false"
+					data-in="false"
+					data-out="false"
+					data-center="false">
+					<div class="owl-carousel">
+						
+						<div class="item">
+							{% for video in video %}										
+								<div class="pos-rel bg-cc bg-cover px-h600" data-ckav-sm="px-h400" data-bg="">
+									<video width="1000" controls>
+										<source src="{{ video.video.url }}" type="video/mp4">
+										<source src="{{ video.video.url }}" type="video/ogg">
+										Your browser does not support HTML video.
+									  </video>
+								</div>
+							{% endfor %}
+						</div>
+						
+
+						<!-- <div class="item">
+							<div class="pos-rel bg-cc bg-cover px-h600" data-ckav-sm="px-h400" data-bg="{% static 'images/800x600-app-02.jpg' %}">
+								<a href="https://www.youtube.com/watch?v=dorZ3vag5PI" class="full-wh flex-cc video-popup z1">
+									<span class="sq80 fs30 btn-white flex-cc solid bdr-2 rd"><i class="fa fa-play mr-l-6"></i></span>
+								</a>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="pos-rel bg-cc bg-cover px-h600" data-ckav-sm="px-h400" data-bg="{% static 'images/800x600-app-03.jpg' %}">
+								<a href="https://www.youtube.com/watch?v=dorZ3vag5PI" class="full-wh flex-cc video-popup z1">
+									<span class="sq80 fs30 btn-white flex-cc solid bdr-2 rd"><i class="fa fa-play mr-l-6"></i></span>
+								</a>
+							</div>
+						</div> -->
+						
+					</div>
+				</div><!-- ======= END :  =======  -->
+			</div>
+		</div>
+	</section>
+	<!-- ************** END : Video introduction **************  -->
+
+	<!--
+	************************************************************
+	* CONTENT SECTION 22
+	************************************************************ -->
+	<section class="pos-rel pd-tb-small" data-ckav-sm="pd-tb-small align-c">
+		<div class="container">
+
+			
+			<!--=================================
+			= SECTION 1
+			==================================-->
+			<div class="row middle-md gt40 mb20">
+				<div class="col-md-6" data-animate-in="fadeInLeft">
+					<img src="{{ content22_section1.image.url }}" class="img-responsive mr-auto" alt="image">
+				</div>
+
+				<div class="col-md-6" data-animate-in="fadeInRight">
+					<h2 class="title small bold-5 f-1" data-ckav-sm="medium">{{ content22_section1.title }}</h2>
+					<p class="title-sub mini f-2" data-ckav-sm="small">{{ content22_section1.text }}</p>
+					
+					<h2 class="title mini bold-n mr-b-30 f-1">{{ content22_section1.title2 }}</h2>
+
+					<ul class="list-2 mr-b-50" data-ckav-sm="align-l">
+						
+						{% for obj in content22_section1_obj %}
+							
+						<li><img style="height: 5vh;" src="{{obj.image.url }}" alt=" ">{{ obj.title }}</li>
+						
+						{% endfor %}
+
+						<!-- <li><i class="txt-default fas fa-anchor"></i> consectetur adipisicing elit</li>
+						<li><i class="txt-default far fa-bell"></i> tempor incididunt ut labore et dolore</li>
+						<li><i class="txt-default fas fa-briefcase"></i> Ut enim ad minim veniam quis nostrud exercitation</li>
+						<li><i class="txt-default fas fa-bullhorn"></i> ullamco laboris nisi ut aliquip ex ea commodo</li> -->
+					</ul>
+
+					<a href="http://ckavart.com/" class="btn btn-dark bold-n solid">Learn more...</a>
+				</div>
+
+			</div>
+			
+			
+			<hr class="mr-tb-60" data-ckav-sm="mr-tb-30">
+
+
+			<!--=================================
+			= SECTION 2
+			==================================-->
+			<div class="row middle-md gt40 mb20">
+				
+				<div class="col-md-6 last-md" data-animate-in="fadeInRight">
+					<img src="{{ content22_section2.image.url }}" class="img-responsive" alt="image">
+				</div>
+
+				<div class="col-md-6" data-animate-in="fadeInLeft">
+					<h2 class="title small bold-5 f-1" data-ckav-sm="medium">{{ content22_section2.title }}</h2>
+					<p class="title-sub mini" data-ckav-sm="small">{{ content22_section2.text }}</p>
+					
+					{% for box in content22_section2_obj %}
+						
+						<div class="info-obj img-l g20 medium mid align-l">
+							<div class="img"><span class=" rd bg-default txt-white"><img src="{{ box.image.url }}" alt=" "></span></div>
+							<div class="info">
+								<h3 class="title mini mr-b-4 bold-n f-1">{{ box.title }}</h3>
+								<p class="mr-0">{{ box.text }}</p>
+							</div>
+						</div>
+
+					{% endfor %}
+
+					<hr class="mr-tb-30">
+
+					<!-- <div class="info-obj img-l g20 medium mid align-l mr-b-60">
+						<div class="img"><span class="iconwrp rd bg-default txt-white"><i class="pe-7s-umbrella"></i></span></div>
+						<div class="info">
+							<h3 class="title mini mr-b-4 bold-n f-1">Flexible design blocks</h3>
+							<p class="mr-0">Fully flexible content blocks gives freedom to design unlimited combinations of template layout according to content requirement</p>
+						</div>
+					</div> -->
+
+					<a href="http://ckavart.com/" class="btn btn-dark bold-n solid">Learn more...</a>
+				</div>
+
+			</div>
+
+
+			<hr class="mr-tb-60" data-ckav-sm="mr-tb-30">
+
+
+			<!--=================================
+			= SECTION 3
+			==================================-->
+			<div class="row middle-lg flex-cc gt40 mb20">
+				
+				<div class="col-lg-4" data-animate-in="fadeInLeft">
+					<h2 class="title small bold-5" data-ckav-sm="medium">{{ content22_section3.title }}</h2>
+					<p class="title-sub mini" data-ckav-sm="small">{{ content22_section3.text }}</p>
+					<a href="http://ckavart.com/" class="btn btn-dark bold-n solid">Learn more...</a>
+				</div>
+
+				<div class="col-lg-4" data-animate-in="fadeIn">
+					<img src="{{ content22_section3.image.url }}" class="img-responsive mr-auto" alt="image">
+				</div>
+
+				<div class="col-lg-4" data-animate-in="fadeInRight">
+					<div class="row gt10 mb10">
+						{% for box in content22_section3_obj %}							
+							<div class="col-md-6">
+								<div class="info-obj img-t g10 tiny align-c pd-20 rd-4 h100 mr-0 ">
+									<div class="img txt-white"><span class=""><img src="{{ box.image.url }}" alt=" "></span></div>
+									<div class="info typo-light">
+										<h3 style="color: black;" class="bold-2 fs14 mr-0 f-1">{{ box.title }}</h3>
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+
+						<!-- <div class="col-md-6">
+							<div class="info-obj img-t g10 tiny align-c pd-20 rd-4 h100 mr-0 bg-default">
+								<div class="img txt-white"><span class="iconwrp"><i class="pe-7s-menu"></i></span></div>
+								<div class="info typo-light">
+									<h3 class="bold-2 fs14 mr-0 f-1">Accordions</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="info-obj img-t g10 tiny align-c pd-20 rd-4 h100 mr-0 bg-default">
+								<div class="img txt-white"><span class="iconwrp"><i class="pe-7s-photo-gallery"></i></span></div>
+								<div class="info typo-light">
+									<h3 class="bold-2 fs14 mr-0 f-1">Sliders</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="info-obj img-t g10 tiny align-c pd-20 rd-4 h100 mr-0 bg-default">
+								<div class="img txt-white"><span class="iconwrp"><i class="pe-7s-film"></i></span></div>
+								<div class="info typo-light">
+									<h3 class="bold-2 fs14 mr-0 f-1">Gallery</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="info-obj img-t g10 tiny align-c pd-20 rd-4 h100 mr-0 bg-default">
+								<div class="img txt-white"><span class="iconwrp"><i class="pe-7s-hourglass"></i></span></div>
+								<div class="info typo-light">
+									<h3 class="bold-2 fs14 mr-0 f-1">Filterable</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="info-obj img-t g10 tiny align-c pd-20 rd-4 h100 mr-0 bg-default">
+								<div class="img txt-white"><span class="iconwrp"><i class="pe-7s-bookmarks"></i></span></div>
+								<div class="info typo-light">
+									<h3 class="bold-2 fs14 mr-0 f-1">Parallax</h3>
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ************** END : CONTENT SECTION 22 **************  -->
+
+	<!--
+	************************************************************
+	* CONTENT SECTION 23
+	************************************************************ -->
+	<section class="pos-rel pd-tb-medium" data-ckav-sm="pd-tb-small align-c">
+		<div class="container pos-rel z2">
+			<div class="row gt20 mb20">
+				<div class="col-md-6 typo-light" data-animate-in="fadeInLeft">
+					<h2 class="title large bold-n mr-b-30 f-1"  data-ckav-sm="medium">{{ content23.title }}</h2>
+					<p>{{ content23.text }}</p>
+					
+					<hr class="light mr-tb-30">
+
+					<a href="https://www.youtube.com/watch?v=dorZ3vag5PI" class="video-popup txt-white f-1">
+						<i class="pe-7s-video align-m mr-r-10 fs40"></i> <span class="align-m fs20">Watch video</span>
+					</a>
+				</div>
+				
+				<div class="col-md-6"></div>
+			</div>
+		</div>
+		<b class="full-wh bg-dark op-03 z1"></b>
+		<b class="full-vh bg-cc bg-cover" data-stellar="y" data-stellar-ratio="0.8" data-ckav-sm="h100" data-bg="{{ content23.background_image.url }}"></b>
+	</section>
+	<!-- ************** END : CONTENT SECTION 23 **************  -->
+	
+	<!--
+	************************************************************
+	* PORTFOLIO 07
+	************************************************************ -->
+	<section class="pos-rel pd-tb-small bg-dark" data-ckav-sm="pd-tb-small" id="gallery">
+		<div class="container pos-rel z1 typo-light">
+			
+			<div class="row gt20 mb20 align-items-center">
+				<div class="col-md-4 offset-md-1 last-md">
+					<h2 class="title mr-b-50 f-1" data-ckav-sm="medium align-c" data-animate-in="fadeInUp">{{ portfolio07.title }}</h2>
+
+					
+					{% for box in portfolio07_obj %}						
+						<div class="info-obj img-l g20 mini" data-animate-in="fadeInUp|0.1">
+							<div class="img"><span class="iconwrp txt-default"><img src="{{ box.image.url }}" alt=""></span></div>
+							<div class="info">
+								<h3 class="title mini bold-n mr-b-4 f-1">{{ box.title }}</h3>
+								<p class="mr-0">{{ box.text }}</p>
+							</div>
+						</div>
+						<hr class="light" data-animate-in="fadeIn|0.2">
+					{% endfor %}
+
+
+					<!-- <div class="info-obj img-l g20 mini" data-animate-in="fadeInUp|0.3">
+						<div class="img"><span class="iconwrp txt-default"><i class="pe-7s-photo-gallery"></i></span></div>
+						<div class="info">
+							<h3 class="title mini bold-n mr-b-4 f-1">Combination of blocks</h3>
+							<p class="mr-0">Lorem ipsum dolor sit ametconsetetur sadipscing nonumy eirmod</p>
+						</div>
+					</div>
+
+					<hr class="light" data-animate-in="fadeIn|0.4">
+
+					<div class="info-obj img-l g20 mini" data-animate-in="fadeInUp|0.5">
+						<div class="img"><span class="iconwrp txt-default"><i class="pe-7s-photo"></i></span></div>
+						<div class="info">
+							<h3 class="title mini bold-n mr-b-4 f-1">Unique designs</h3>
+							<p class="mr-0">Lorem ipsum dolor sit ametconsetetur sadipscing nonumy eirmod</p>
+						</div>
+					</div> -->
+
+				</div>
+				
+				<div class="col-md-7" data-animate-in="fadeIn">
+					<!--=================================
+					= CAROUSEL
+					==================================-->
+					<div class="carousel-widget ctrl-1 popgallery-widget ctrl-light" 
+						data-items="1"
+						data-nav="true"
+						data-pager="true"
+						data-itemrange="0,1|420,1|600,2|768,2|992,3|1200,3"
+						data-margin="20"
+						data-autoplay="false"
+						data-hauto="false"
+						data-in="false"
+						data-out="false"
+						data-center="false">
+						<div class="owl-carousel">
+							
+							{% for image in portfolio07_image %}								
+								<div class="item">
+									<div class="content"><a href="{{ image.image.url }}" class="pop-img"><img src="{{ image.image.url }}" alt="image"></a></div>
+								</div>
+							{% endfor %}
+
+
+							<!-- <div class="item">
+								<div class="content"><a href="{% static 'images/app-img-02.jpg' %}" class="pop-img"><img src="{% static 'images/app-img-02.jpg' %}" alt="image"></a></div>
+							</div>
+
+							<div class="item">
+								<div class="content"><a href="{% static 'images/app-img-03.jpg' %}" class="pop-img"><img src="{% static 'images/app-img-03.jpg' %}" alt="image"></a></div>
+							</div>
+
+							<div class="item">
+								<div class="content"><a href="{% static 'images/app-img-04.jpg' %}" class="pop-img"><img src="{% static 'images/app-img-04.jpg' %}" alt="image"></a></div>
+							</div>
+
+							<div class="item">
+								<div class="content"><a href="{% static 'images/app-img-05.jpg' %}" class="pop-img"><img src="{% static 'images/app-img-05.jpg' %}" alt="image"></a></div>
+							</div>
+
+							<div class="item">
+								<div class="content"><a href="{% static 'images/app-img-06.jpg' %}" class="pop-img"><img src="{% static 'images/app-img-06.jpg' %}" alt="image"></a></div>
+							</div>
+
+							<div class="item">
+								<div class="content"><a href="{% static 'images/app-img-07.jpg' %}" class="pop-img"><img src="{% static 'images/app-img-07.jpg' %}" alt="image"></a></div>
+							</div>
+
+							<div class="item">
+								<div class="content"><a href="{% static 'images/app-img-08.jpg' %}" class="pop-img"><img src="{% static 'images/app-img-08.jpg' %}" alt="image"></a></div>
+							</div> -->
+							
+						</div>
+					</div><!-- ======= END :  =======  -->
+				</div>
+			</div>
+
+			
+		</div>
+	</section>
+	<!-- ************** END : PORTFOLIO 07 **************  -->
+
+	<!--
+	****************************************************************************
+	* PACKAGE SECTION 01                             
+	**************************************************************************** -->
+	<!-- <section class="pd-tb-small pos-rel" data-ckav-sm="pd-tb-small" id="price">
+		<div class="container pos-rel z1">
+			<div class="w75 mr-auto align-c" data-animate-in="fadeInUp">
+				<h2 class="title f-1">Straightforward Pricing</h2>
+				<p class="title-sub f-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur natus fugiat beatae blanditiis, in, molestias sequi.</p>
+				
+			</div>
+
+			
+			<hr class="mr-tb-50">
+			 -->
+			
+			<!-- <h2 class="title small mr-b-40 align-c f-1 bold-5" data-animate-in="fadeIn">Frequently Asked Questions</h2>
+			
+			<div class="row gt40 mb20">
+				<div class="col-lg-8">
+					<div class="row gt40 mb40">
+						<div class="col-md-6">
+							<h3 class="mr-b-10 fs18 bold-n f-1" data-animate-in="fadeInUp|0.1">Lorem ipsum dolor sit amet</h3>
+							<p>consectetur adipisicing elit. Minima vero incidunt vitae totam perferendis, facere esse explicabo corporis, fuga iure? Libero modi commodi quis eligendi, veniam quidem ab quam repellat</p>
+						</div>
+
+						<div class="col-md-6">
+							<h3 class="mr-b-10 fs18 bold-n f-1" data-animate-in="fadeInUp|0.2">Lorem ipsum dolor sit amet</h3>
+							<p>consectetur adipisicing elit. Minima vero incidunt vitae totam perferendis, facere esse explicabo corporis, fuga iure? Libero modi commodi quis eligendi, veniam quidem ab quam repellat</p>
+						</div>
+
+						<div class="col-md-6">
+							<h3 class="mr-b-10 fs18 bold-n f-1" data-animate-in="fadeInUp|0.3">Lorem ipsum dolor sit amet</h3>
+							<p>consectetur adipisicing elit. Minima vero incidunt vitae totam perferendis, facere esse explicabo corporis, fuga iure? Libero modi commodi quis eligendi, veniam quidem ab quam repellat</p>
+						</div>
+
+						<div class="col-md-6">
+							<h3 class="mr-b-10 fs18 bold-n f-1" data-animate-in="fadeInUp|0.4">Lorem ipsum dolor sit amet</h3>
+							<p>consectetur adipisicing elit. Minima vero incidunt vitae totam perferendis, facere esse explicabo corporis, fuga iure? Libero modi commodi quis eligendi, veniam quidem ab quam repellat</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4" data-animate-in="fadeInRight">
+					<div class="bdr-1 bdr-default pd-tb-40 pd-lr-40 align-c">
+						<p class="title-sub mr-b-10">Can't find suitable answer?</p>
+						<p>Ask our support team</p>
+						<a href="http://ckavart.com/" class="btn btn-default btn-block solid large bold-n"><i class="pe-7s-comment mr-b-5 fs60"></i><br><span class="fs18">Any questions left?</span></a>
+					</div>
+				</div>
+			</div> -->
+			
+
+		<!-- </div>
+	</section> -->
+	<!-- ************** END : PACKAGE SECTION 01 **************  -->
+
+	<!--
+	************************************************************
+	* TESTIMONIALS
+	************************************************************ -->
+	<section class="pos-rel pd-tb-small" data-ckav-sm="pd-tb-small" id="testimonials">
+		<div class="container pos-rel z1">
+
+			<div class="w75 mr-auto align-c" data-animate-in="fadeInUp">
+				<h2 class="title f-1" data-ckav-sm="medium">{{ testimonals.title }}</h2>
+				<p class="title-sub" data-ckav-sm="small">{{ testimonals.text }}</p>	
+			</div>
+			
+			<!--=================================
+			= LOGO
+			==================================-->
+			<ul class="inline-list gt-small size-small reset op-05" data-animate-in="fadeIn|0.1">
+				
+				{% for brand in brand %}
+					
+				
+					<li><img src="{{ brand.image.url}}" alt="brand"></li>
+				
+				{% endfor %}
+
+				<!-- <li><img src="{% static 'images/brand-logo2.png' %}" alt="brand"></li>
+				<li><img src="{% static 'images/brand-logo3.png' %}" alt="brand"></li>
+				<li><img src="{% static 'images/brand-logo4.png' %}" alt="brand"></li>
+				<li><img src="{% static 'images/brand-logo5.png' %}" alt="brand"></li>
+				<li><img src="{% static 'images/brand-logo6.png' %}" alt="brand"></li> -->
+			</ul>
+
+			<hr class="mr-tb-60" data-animate-in="fadeIn|0.2">
+			
+			<!--=================================
+			= TESTIMONIALS
+			==================================-->
+			<div class="row gt40 mb20">
+				
+				{% for text in testimonals_text %}					
+					<div class="col-md-4" data-animate-in="fadeInUp|0.1">
+						<div class="pd-lr-30 pd-tb-30 bg-white mr-b-20 rd-5 shadow-2" data-ckav-sm="pd-20">
+							<p>{{ text.text }}</p>
+						</div>
+						<div class="info-obj img-l g10 mini mid align-l mr-lr-10">
+							<div class="img"><img src="{{ text.image.url }}" class="rd" alt="Person"></div>
+							<div class="info">
+								<h3 class="bold-2 fs16 mr-0 f-1">{{ text.name }}</h3>
+								<em class="fs12">{{ text.position }}</em>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+
+				<!-- <div class="col-md-4" data-animate-in="fadeInUp|0.2">
+					<div class="pd-lr-30 pd-tb-30 bg-white mr-b-20 rd-5 shadow-2" data-ckav-sm="pd-20">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla similique optio exercitationem rerum illo, labore voluptatem voluptates! Ea repellendus omnis tempora, impedit numquam. Voluptas atque, dignissimos quisquam.</p>
+					</div>
+					<div class="info-obj img-l g10 mini mid align-l mr-lr-10">
+						<div class="img"><img src="{% static 'images/person-02.jpg' %}" class="rd" alt="Person"></div>
+						<div class="info">
+							<h3 class="bold-2 fs16 mr-0 f-1">Oupsum dolor</h3>
+							<em class="fs12">Creative Director</em>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4" data-animate-in="fadeInUp|0.3">
+					<div class="pd-lr-30 pd-tb-30 bg-white mr-b-20 rd-5 shadow-2" data-ckav-sm="pd-20">
+						<p>Consectetur adipisicing elit. Nulla similique optio exercitationem id, sapiente ea rerum illo, labore voluptatem voluptates! Ea repellendus omnis tempora, impedit numquam. Voluptas atque, dignissimos quisquam.</p>
+					</div>
+					<div class="info-obj img-l g10 mini mid align-l mr-lr-10">
+						<div class="img"><img src="{% static 'images/person-03.jpg' %}" class="rd" alt="Person"></div>
+						<div class="info">
+							<h3 class="bold-2 fs16 mr-0 f-1">Oupsum dolor</h3>
+							<em class="fs12">Creative Director</em>
+						</div>
+					</div>
+				</div> -->
+
+			</div>
+
+		</div>
+		<b class="full-wh" data-gradient="y" data-g-colors="rgba(0, 0, 0,0)|rgba(0, 0, 0, 0.1)"></b>
+	</section>
+	<!-- ************** END : TESTIMONIALS **************  -->
+
+	<!--
+	************************************************************
+	* DOWNLOAD SECTION 01 
+	************************************************************ -->
+	<section class="pd-0 pos-rel" data-ckav-sm="pd-tb-small" >
+		<div class="container pd-tb-medium pos-rel z1 align-c typo-light" >
+			<img src="{% static 'images/logo-app-w.png' %}" class="max-px-w100 mr-auto mr-b-50" alt="icon">
+
+			<h2 class="title large f-1" data-ckav-sm="large">Get Hex Now</h2>
+			<p class="title-sub" data-ckav-sm="medium">Hex app now available for download. Join us and make your life easy.</p>
+			
+			<a href="http://ckavart.com/" class="sq80 fs30 mr-lr-5 btn-white solid bdr-2 inline-flex rd flex-cc"><i class="fab fa-apple"></i></a>
+			<a href="http://ckavart.com/" class="sq80 fs30 mr-lr-5 btn-white solid bdr-2 inline-flex rd flex-cc"><i class="fab fa-android"></i></a>
+			<a href="http://ckavart.com/" class="sq80 fs30 mr-lr-5 btn-white solid bdr-2 inline-flex rd flex-cc"><i class="fab fa-windows"></i></a>
+		</div>
+		<div style="background-image: url({{form_text.image.url}});  background-size:cover">
+		<div class="pd-tb-small pos-rel z2">
+			<div  class="container pos-rel z1 align-c typo-light">
+				<div class="w75 mr-auto mr-b-50 align-c" >
+					<h2 class="title txt-upper f-1">{{ form_text.title }}</h2>
+					<p>{{ form_text.text }}</p>
+				</div>
+
+				<div class="form-block w75 mr-auto" >
+					
+
+					<form action="{% url 'get_number' %}"  method="post">
+						{% csrf_token %}
+						<div class="field-wrp">
+							<div class="row gt10">
+								<div class="col-md-4">
+									<div class="form-group">
+										<input class="form-control form-control-light bdr-white light w100"   type="text" name="name" placeholder="Enter your name">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<input class="form-control form-control-light bdr-white light w100" type="text" name="phone_number" placeholder="Enter your phone number">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<button type="submit"  class="btn solid btn-default light block btn-reset" style="min-height: 44px;"> SUBSCRIBE NOW</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>	
+			</div>
+			<b class="bg-dark op-07 full-wh"></b>
+		</div>
+		</div>
+
+		<div class="full-vh bg-cc bg-cover vh140" data-ckav-sm="mr-t-0 h100" data-stellar="y" data-stellar-ratio="0.9" data-ckav-sm="h100" data-bg="images/bg-app-05.jpg"><b class="full-wh bg-dark1 op-07"></b></div>
+	</section><!-- ************** END : DOWNLOAD SECTION 01 **************  -->
+
+	<!--
+	****************************************************************************
+	* FOOTER SECTION 11                            
+	**************************************************************************** -->
+	<footer class="pd-tb-small pos-rel" data-ckav-sm="pd-tb-small align-c">
+		<div class="container pos-rel z1">
+			
+			<div class="row gt20 mb20">
+				
+				<!--=================================
+				= INFO
+				==================================-->
+				<div class="col-md-3" data-animate-in="fadeIn|0.1">
+					<p><a href="http://ckavart.com/" class="inline-block max-px-w100"><img src="{{ company.logo.url }}"  alt="logo"></a></p>
+					<p>{{ company.address }}</p>
+				</div>
+
+
+				<!--=================================
+				=  LINKS
+				==================================-->
+				<div class="col-md-3" data-animate-in="fadeIn|0.2">
+					<h2 class="title tiny bold-n f-1">Product</h2>
+					<ul class="list-1">
+						<li><a href="http://ckavart.com/">Our items</a></li> 
+						<li><a href="http://ckavart.com/">template templates</a></li>
+						<li><a href="http://ckavart.com/">Features</a></li>
+						<li><a href="http://ckavart.com/">Plan and pricing</a></li>
+					</ul>
+				</div>
+
+				<!--=================================
+				=  LINKS
+				==================================-->
+				<div class="col-md-3" data-animate-in="fadeIn|0.3">
+					<h2 class="title tiny bold-n f-1">Help and Support</h2>
+					<ul class="list-1">
+						<li><a href="http://ckavart.com/">Video tutorials</a></li> 
+						<li><a href="http://ckavart.com/">Forums</a></li>
+						<li><a href="http://ckavart.com/">Help center</a></li>
+						<li><a href="http://ckavart.com/">Contact us</a></li>
+					</ul>
+				</div>
+
+
+				<!--=================================
+				=  LINKS
+				==================================-->
+				<div class="col-md-3" data-animate-in="fadeIn|0.3">
+					<h2 class="title tiny bold-n f-1">Social network</h2>
+					<ul class="list-1">
+						<li><a href="http://ckavart.com/" target="_blank"><i class="sq20 fs16 mr-r-4 inline-flex flex-cc fab fa-facebook-f"></i> ckavart</a></li>
+						<li><a href="http://ckavart.com/" target="_blank"><i class="sq20 fs16 mr-r-4 inline-flex flex-cc fab fa-google"></i> ckavart</a></li>
+						<li><a href="http://ckavart.com/" target="_blank"><i class="sq20 fs16 mr-r-4 inline-flex flex-cc fab fa-twitter"></i> ckavart</a></li>
+						<li><a href="http://ckavart.com/" target="_blank"><i class="sq20 fs16 mr-r-4 inline-flex flex-cc fab fa-dribbble"></i> ckavart</a></li>
+					</ul>
+				</div>
+				
+
+			</div>
+
+			<hr class="mr-tb-20">
+			<a href="#" target="_blank">CKavArt</a> &copy; <script>document.write(new Date().getFullYear());</script>
+			
+		</div>
+	</footer>
+	<!-- ************** END : FOOTER SECTION 11 **************  -->
+
+	<!--
+	************************************************************
+	* POPUP 04
+	************************************************************ -->
+	
+	<!-- form : "mfp-hide" Add this class before using -->
+	<div id="popup-content" class="white-popup-block popup-content mfp-hide">
+		<div class="pop-header align-c pd-b-0" data-ckav-sm="pd-20">
+			<p class="sq90 inline-flex flex-cc fs80 mr-0 txt-color4"><i class="pe-7s-mail"></i></p>
+			<h2 class="title mr-0" data-ckav-sm="small">DROP US A LINE</h2>
+		</div>
+		<div class="pop-body" data-ckav-sm="pd-20">
+			
+			<div class="form-block">
+				<form action="form-data/formdata.php" class="form-widget">
+					<div class="field-wrp">
+						<input type="hidden" name="to" value="c.kav.art@gmail.com">
+						<div class="form-group">
+							<input class="form-control" data-label="Name" required data-msg="Please enter name." type="text" name="name" placeholder="Enter your name">
+						</div>
+						<div class="form-group">
+							<input class="form-control" data-label="Email" required data-msg="Please enter email." type="email" name="email" placeholder="Enter your email">
+						</div>
+						<div class="form-group">
+							<input class="form-control" required data-label="Phone" data-msg="Please phone number." type="text" name="phone" placeholder="Enter your phone number">
+						</div>
+						<div class="form-group">
+							<input class="form-control" data-label="Subject" required data-msg="Please enter subject." type="text" name="subject" placeholder="Enter subject">
+						</div>
+						<div class="form-group">
+							<input class="form-control datetime-pick" data-label="Subject" required data-msg="Please enter subject." type="text" name="subject" placeholder="Enter subject">
+						</div>
+						
+						<div class="form-group">
+							<textarea class="form-control" data-label="Message" required data-msg="Please enter your message." name="message" placeholder="Add your message" cols="30" rows="10"></textarea>
+						</div>
+					</div>
+					<button type="submit" class="btn solid btn-default block"><i class="fa fa-envelope-o"></i> SUBMIT</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- ************** END : POPUP 04 **************  -->
+	
+
+	<!-- GOOGLE FONTS -->
+	<script>
+	/* Use fonts with class name in sequence => f-1, f-2, f-3 .... */
+	var fgroup = [
+		'Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i',
+		'Open Sans:300,300i,400,400i,600,600i,700,700i,800,800i'
+	];
+	</script>
+
+</div>
+<!-- /#page --> 
+
+<script src="{% static 'js/webfonts.js' %}" type="text/javascript"></script>
+
+<script src="{% static 'lib/jquery/jquery-3.3.1.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/jquery/jquery-migrate-3.0.0.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/jquery/popper.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/jquery-smooth-scroll/jquery.smooth-scroll.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/jQuery-viewport-checker/jquery.viewportchecker.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/Swiper/js/swiper.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/owl-carousel/owl.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/Magnific-Popup/jquery.magnific-popup.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/isotope/imagesloaded.pkgd.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/isotope/packery-mode.pkgd.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/jQuery-Countdown/jquery-countdown.js' %}" type="text/javascript"></script>
+
+<script src="{% static 'lib/sweetalert/sweetalert2.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/jquery-validation/jquery.validate.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/youtubebackground/jquery.youtubebackground.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/Vide/jquery.vide.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/vegas/vegas.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/materialize-parallax/materialize-parallax.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/countUp/countUp.js' %}" type="text/javascript"></script>
+<script src="{% static 'lib/stellar/jquery.stellar.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/enquire.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
